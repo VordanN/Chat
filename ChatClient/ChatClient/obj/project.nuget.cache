@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "FDZmeo/OzQU4sFrvrqhMlQmcsMasCvE7csfLIUc5m29eWYgNe4q1h8k11mjV241/NSPiHiYbI5JV3ShKXIAfMQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Йогурт\\source\\repos\\ChatClient\\ChatClient\\ChatClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Йогурт\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

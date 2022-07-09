@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MVVM\View\arrow.ico" />
+    <None Remove="MVVM\View\plus.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="MVVM\View\arrow.ico" />
+    <Resource Include="MVVM\View\plus.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Overides\" />
+  </ItemGroup>
+
+</Project>

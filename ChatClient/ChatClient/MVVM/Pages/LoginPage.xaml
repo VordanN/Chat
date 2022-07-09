@@ -1,0 +1,31 @@
+﻿<Page x:Class="ChatClient.MVVM.Pages.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:viewmodel="clr-namespace:ChatClient.MVVM.ViewModel" xmlns:customcontrols="clr-namespace:ChatClient.CustomControls"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="1200"
+      Background="#36393f"
+      Title="LoginPage">
+
+    <Page.DataContext>
+        <viewmodel:LoginViewModel/>
+    </Page.DataContext>
+
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Height="400" Width="350">
+            <TextBlock Text="Login" FontSize="30" HorizontalAlignment="Center" FontWeight="Bold" Foreground="WhiteSmoke" Margin="0,0,0,20" />
+
+
+
+            <customcontrols:CustomControl PlaceHolderText="UserName"
+                                          InputText="{Binding UserName}"
+                                          Margin="0,0,0,20" />
+            <customcontrols:CustomControl PlaceHolderText="Password"
+                                          InputText="{Binding Password}"
+                                          Margin="0,0,0,20"  />
+            
+            <Button Content="Login" Margin="0,0,0,20" Command="{Binding Login}" />
+        </StackPanel>
+    </Grid>
+</Page>
